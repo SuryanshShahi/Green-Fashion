@@ -20,7 +20,7 @@
     <script>
         const changeBackground = () => {
             var x = document.getElementById("navbar");
-            // var y = document.getElementById("backtotop");
+            var y = document.getElementById("backtotop");
             var b = document.getElementById("menuBars");
             if (window.scrollY >= 100) {
                 if (x.classList == "active") {
@@ -39,6 +39,8 @@
         window.addEventListener("scroll", changeBackground);
     </script>
 
+    <div class="position-absolute" style="z-index: -1 " id="top">
+    </div>
     <header class="fixed-top" id="header">
         <nav id="navbar" class="navbar navbar-expand-lg navbar-light"
             style="box-shadow: 0px 0px 5px 3px #8080807d; background-color: #008060">
@@ -58,13 +60,13 @@
                             <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item mx-lg-3">
-                            <a class="nav-link text-white" href="#">Catalog</a>
+                            <a class="nav-link text-white" href="#Catalog">Catalog</a>
                         </li>
                         <li class="nav-item mx-lg-3">
-                            <a class="nav-link text-white" href="#">Contact</a>
+                            <a class="nav-link text-white" href="#Contact">Contact</a>
                         </li>
                         <li class="nav-item mx-lg-3">
-                            <a class="nav-link text-white" href="#">About Us</a>
+                            <a class="nav-link text-white" href="#About">About Us</a>
                         </li>
                     </ul>
                 </div>
@@ -101,7 +103,7 @@
     </div>
 
     <!-- -------------------------services------------------------- -->
-    <div class="services container-lg container-fluid my-5">
+    <div class="services container-lg container-fluid my-5" id="Catalog">
         <h1 class="text-center">
             Service <span style="color: #008060">Catalog</span>
         </h1>
@@ -213,7 +215,7 @@
     </div>
 
     <!-- -------------------------Contact------------------------- -->
-    <div class="contact my-5 container">
+    <div class="contact my-5 container" id="Contact">
         <div class="row gx-0">
             <div class="col-lg-6 col-md-6 col-12 px-3">
                 <h1 class="font-weight-bolder text-center">
@@ -257,10 +259,10 @@
                     <li style="word-break: break-all">
                         <b>Toll-free:&nbsp;</b><a class="text-decoration-none" href="tel:+6797776882">+6797776882</a>
                     </li>
-                    <li style="word-break: break-all">
+                    <li>
                         <b>Address:&nbsp;</b>Shop 4 Westpoint Arcade, Nadi, 679, Fiji
                     </li>
-                    <li style="word-break: break-all">
+                    <li>
                         <b>Opening Hours:&nbsp;</b>Monday to Saturday : 9am - 10pm , Sunday : 10am - 6pm
                     </li>
                 </ul>
@@ -481,19 +483,19 @@
     <footer class="py-4 pb-5" style="background-color: #0f0f0f">
         <div class="container text-white">
             <div class="row gx-0">
-                <div class="col-lg-4 col-md-6 col-12" style="font-size: 14px">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12" style="font-size: 14px">
                     <div class="mb-3"><b>SHOP</b></div>
                     <div class="" style="font-size: 13px">
                         Shop 4 Westpoint Arcade, Nadi Fiji
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12" style="font-size: 14px">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-lg-0 mt-md-0 mt-sm-0 mt-4" style="font-size: 14px">
                     <div class="mb-3"><b>INFORMATION</b></div>
                     <div class="mb-2" style="font-size: 13px">Terms & Conditions</div>
                     <div class="mb-2" style="font-size: 13px">Privacy Policy</div>
                     <div class="mb-2" style="font-size: 13px">FAQ</div>
                 </div>
-                <div class="col-lg-4 col-12">
+                <div class="col-lg-4 col-12 mt-lg-0 mt-4">
                     <div class="" style="font-size: 14px"><b>STAY CONNECTED</b></div>
                     <div class="d-flex my-3">
                         <span
@@ -530,6 +532,13 @@
             </div>
         </div>
     </footer>
+
+    <div class="backtotop container-fluid justify-content-end d-flex" style="bottom: 0;">
+        <a id="backtotop" style="display: none;" href="#top"
+            class="back text-decoration-none text-center hello text-white">
+            <span class="fa fa-angle-up"></span>
+        </a>
+    </div>
 </body>
 
 </html>

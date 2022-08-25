@@ -114,3 +114,26 @@ footer .fa:hover{
     cursor: pointer;
     transition: 0.6s;
 }
+.backtotop {
+    position: fixed;
+    float: right;
+    z-index: 999;
+    bottom: 5%;
+  }
+
+  .hello {
+    height: 35px;
+    width: 50px;
+    border-radius: 5px 5px 0px 0px;
+    line-height: 40px;
+    background-color: #008060;
+    transition: 0.3s;
+  }
+  
+  .hello:hover {
+    background-color: #09a37d !important;
+  }
+  .back.active {
+    display: block;
+  }
+  
