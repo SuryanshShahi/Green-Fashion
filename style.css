@@ -54,15 +54,7 @@ button:hover {
     transform: translateY(0%);
   }
 }
-/* -------------About US--------------- */
-#about .content{
-  width: 40%;
-}
-@media(max-width:990px){
-  #about .content{
-    width: 100%;
-  }
-}
+
 /* -------------testomonials--------------- */
 .testomonials::-webkit-scrollbar {
   width: 3px;
