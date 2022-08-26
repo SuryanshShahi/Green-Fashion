@@ -4,11 +4,11 @@
   margin-top: 66px;
 }
 button:hover {
-    background-color: #09a37d !important;
-    border: 1px solid #09a37d;
-    transition: 0.5s;
-  }
-  
+  background-color: #09a37d !important;
+  border: 1px solid #09a37d;
+  transition: 0.5s;
+}
+
 #banner {
   background: url("./Images/bannerImg.webp") no-repeat;
   background-size: cover;
@@ -54,17 +54,15 @@ button:hover {
     transform: translateY(0%);
   }
 }
-/* @media (max-width: 850px) {
-  #banner {
-    background-size: 100% 50vh;
-    height: 50vh;
-    background-position-y: top;
+/* -------------About US--------------- */
+#about .content{
+  width: 40%;
+}
+@media(max-width:990px){
+  #about .content{
+    width: 100%;
   }
-
-  .bannerHeading {
-    height: 50vh !important;
-  }
-} */
+}
 /* -------------testomonials--------------- */
 .testomonials::-webkit-scrollbar {
   width: 3px;
@@ -108,32 +106,31 @@ footer button:hover {
   border: 1px solid white;
   transition: 0.5s;
 }
-footer .fa:hover{
-    background-color: #008060 !important;
-    color: white !important;
-    cursor: pointer;
-    transition: 0.6s;
+footer .fa:hover {
+  background-color: #008060 !important;
+  color: white !important;
+  cursor: pointer;
+  transition: 0.6s;
 }
 .backtotop {
-    position: fixed;
-    float: right;
-    z-index: 999;
-    bottom: 5%;
-  }
+  position: fixed;
+  float: right;
+  z-index: 999;
+  bottom: 5%;
+}
 
-  .hello {
-    height: 35px;
-    width: 50px;
-    border-radius: 5px 5px 0px 0px;
-    line-height: 40px;
-    background-color: #008060;
-    transition: 0.3s;
-  }
-  
-  .hello:hover {
-    background-color: #09a37d !important;
-  }
-  .back.active {
-    display: block;
-  }
-  
+.hello {
+  height: 35px;
+  width: 50px;
+  border-radius: 5px 5px 0px 0px;
+  line-height: 40px;
+  background-color: #008060;
+  transition: 0.3s;
+}
+
+.hello:hover {
+  background-color: #09a37d !important;
+}
+.back.active {
+  display: block;
+}
