@@ -54,7 +54,13 @@ button:hover {
     transform: translateY(0%);
   }
 }
+/* -------------About US--------------- */
 
+@media (max-width: 550px) {
+  #about .image {
+    height: 250px;
+  }
+}
 /* -------------testomonials--------------- */
 .testomonials::-webkit-scrollbar {
   width: 3px;
