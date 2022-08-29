@@ -150,3 +150,12 @@ footer .fa:hover {
   background-color: white !important;
   color: black !important;
 }
+
+@media (max-width: 700px) {
+  .thankText {
+    font-size: 3rem !important;
+  }
+  .tagLine {
+    font-size: 0.9rem !important;
+  }
+}
